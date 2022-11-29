@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dasa.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="return mainadd()"  id="form" method="post">
+           <div class="con">
+           <header>
+              <h2 id="regis">Регистрация</h2>
+              <p id="podregis">Введите даные для регистрации</p>
+           </header>
+           <br>
+           <div>
+                <input id="inname" type="text" placeholder="Имя" required>
+              <br>
+              <input type="number" placeholder="номер телефона" id="number"  name="number" required>
+              <br>
+              <input  type="password" placeholder="Пароль" id="pass"  name="password" required>
+              <br>
+              <button type="submit" id="btn"> Добавить </button>
+              <p id="del"  onclick="deladd(this)">Удаление пользователя</p>
+           </div>
+           </div>
+          </div>
+        </form>
+        <div id="numlist">
+            <p id="npn">Пока нет телефонов</p>
+            <h4 id="listnum"></h4>
+        </div>
+        </div>
+</body>
+<script src="main2.js"></script>
+</html>
